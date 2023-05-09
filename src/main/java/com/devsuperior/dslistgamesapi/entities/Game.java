@@ -25,7 +25,12 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+//	Muda o tipo da coluna para texto no banco de dados, evitando o limite de 255 caracteres padrão
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game () {		
