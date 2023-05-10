@@ -22,6 +22,7 @@ private Long id;
 
 	public GameDto(Game entity) {
 //		Os nomes precisam ser iguais para a copia funcionar
+//		Quando se usa BeanUtils, precisamos dos getters e setters
 		BeanUtils.copyProperties(entity, this);
 	}
 
